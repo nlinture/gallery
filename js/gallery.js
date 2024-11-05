@@ -14,7 +14,7 @@ function upDate(previewPic){
      document.getElementById('image').innerHTML = alt;
        }
    
-       function unDo(){
+function unDo(){
         /* In this function you should 
        1) Update the url for the background image of the div with the id = "image" 
        back to the orginal-image.  You can use the css code to see what that original URL was
@@ -26,3 +26,20 @@ function upDate(previewPic){
     X.style.backgroundImage = "url('')";
     document.getElementById('image').innerHTML = "Hover over an image below to display here";
        }
+function tab(){
+   var ms = document.querySelectorAll(".preview");
+   for(i=0; i <ms.length; i++){
+      tabIndex = i;
+      ms[i].setAttribute("tabindex", tabIndex);
+   }
+}
+function changeBorder(element){
+   element.setAttribute("style", "border: 5px dotted blue");      
+ }
+ function chan(element){
+   element.setAttribute("style", "background-color: blue");
+
+ }
+ function changeWidth(element){
+   element.setAttribute("style", "width: 50%");
+ }

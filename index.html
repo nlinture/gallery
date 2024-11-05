@@ -6,17 +6,22 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<script src = "js/gallery.js"></script>
 </head>
-<body>
+<body onload="tab()">
 	
-	<div id = "image">
+	<div id = "image" onclick="chan(this)" src="">
 		Hover over an image below to display here.
 	</div>
 	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Avenue of the Baobabs, Madagascar" src = "images/1.webp" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="changeBorder(this)" onblur="changeWidth(this)">
 	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Hạ Long Bay, Vietnam" src = "images/2.webp" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="changeBorder(this)" onblur="changeWidth(this)">
 	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" src = "images/3.webp" alt = "Zhangye National Geopark, China" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="changeBorder(this)" onblur="changeWidth(this)">
+    
+	<img class = "preview" src = "images/4.webp" alt = "Vatnajökull National Park, Iceland" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="changeBorder(this)" onblur="changeWidth(this)">
 
+	<img class = "preview" src = "images/5.webp" alt = "Pamukkale, Turkey" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="changeBorder(this)" onblur="changeWidth(this)">
+
+	<img class = "preview" src = "images/6.webp" alt = "Machu Picchu, Peru" onmouseover = "upDate(this)" onmouseout = "unDo()"  onfocus="changeBorder(this)" onblur="changeWidth(this)">
 </body>
 </html>
